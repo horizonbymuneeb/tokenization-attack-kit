@@ -297,7 +297,9 @@ def detect_attack(text: str) -> dict:
             signals["suspicious_scripts"].add("Cyrillic")
         elif 0x0370 <= ord(c) <= 0x03FF:  # Greek
             signals["suspicious_scripts"].add("Greek")
-        elif 0x0590 <= ord(c) <= 0x05FF:  # Hebrew (RTL)
+        elif 0x0590 <= ord(c) <= 0x05FF:  # Hebrew (RTL script)
+            signals["suspicious_scripts"].add("Hebrew")
+        elif c == '\u202e' or c == '\u202d' or c == '\u202b' or c == '\u202c' or c == '\u202a' or c == '\u200f':
             signals["rtl_override"] = True
         elif c in ZERO_WIDTH:
             signals["zero_width"] = True
