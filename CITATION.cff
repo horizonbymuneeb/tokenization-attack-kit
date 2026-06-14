@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the companion paper."
+authors:
+  - family-names: Anjum
+    given-names: Muneeb
+    affiliation: COMSATS University Islamabad, Abbottabad
+title: "TokenAttackKit: Open-source toolkit for LLM tokenization attacks"
+version: 1.0.0
+date-released: 2026-06-14
+url: "https://github.com/horizonbymuneeb/tokenization-attack-kit"
